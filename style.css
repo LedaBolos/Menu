@@ -106,8 +106,6 @@ html::-webkit-scrollbar-thumb{
 #menu-bar{
     display: none;
 }
-
-
 .home {
     min-height: 100vh;
     display: flex;
@@ -158,7 +156,6 @@ section{
     margin-bottom: 3rem;
     color: var(--black);
 }
-
 .product .product-row{
     margin-bottom: 5rem;
     display: flex;
@@ -202,7 +199,7 @@ section{
 }
 .product .product-row .product-content .orderNow{
     height: 3rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-bottom: 3rem;
 }
 .product .product-row .product-content .orderNow button{
@@ -216,7 +213,6 @@ section{
 .product .product-row .product-content .orderNow button:hover{
     font-size: 2rem;
 }
-
 .blogs{
     background: url(images/backGround.png) no-repeat;
     background-size: cover;
@@ -330,7 +326,6 @@ section{
     height: 7rem;
     clip-path: circle(50% at 50% 50%);
 }
-
 .review .review-row .box .client-info .clientDetailed h3{
     font-size: 2.5rem;
 
@@ -381,7 +376,6 @@ section{
 .footer .box-container .box a:hover i{
     padding-right: 2rem;
 }
-
 .footer .share{
     padding: 1rem 0;
     text-align: center;
@@ -395,7 +389,6 @@ section{
     background: var(--black);
     margin: 0 .3rem;
     border-radius: 50%;
-
 }
 .footer .share a:hover{
     background: var(--white);
@@ -407,9 +400,7 @@ section{
     padding-bottom: 2rem;
     color: var(--black);
     text-align: center;
-    
 }
-
 .swiper-pagination-bullet{
     background-color: var(--black);
 }
@@ -482,18 +473,30 @@ section{
         justify-content: center;
         align-items: center;
     }
+    .product .product-row .box {
+        display: flex;
+        flex-direction: column;
+        width: 100%; /* Ajuste para ocupar 100% da largura do swiper */
+        max-width: 50rem; /* Adicione um limite opcional, se necessário */
+        background-color: var(--white);
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+        gap: 1.5rem;
+        border-radius: 3rem;
+        margin: 0; /* Remova a margem direita para evitar espaços indesejados */
+        box-sizing: border-box; /* Garante que padding seja incluído no cálculo de largura */
+    }    
 }
 
 .blogs .blogs-row .box .img img{
     width: 100%;
     padding: 4rem;
 }
-
 .blogs .blogs-row .box .content{
     flex: 1 1 45rem;
     padding: 6rem;
 }
-
 .home {
     min-height: 80vh;
     display: flex;
@@ -502,7 +505,6 @@ section{
     background-size: cover;
     background-position: center center;
 }
-
 .container {
 margin: 20px auto;
 max-width: 600px;
@@ -514,7 +516,6 @@ text-align: center;
 justify-content: center;
 align-items: center;
 }
-
 .button {
 font-size: 1.8rem;
 background-color: var(--black);
@@ -523,28 +524,23 @@ border-radius: .7rem;
 padding: .7rem 2rem;
 cursor: pointer;
 }
-
 .button:hover {
 background-color: #315f7d;
 }
-
 .spacer {
 margin: 30px 0;
 }
-
 .info-container {
 margin: 40px auto;
 max-width: 800px;
 padding: 10px;
 }
-
 .info-section {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
 }
-
 .info-card {
     margin-top: -20px;
     background: #fff;
@@ -555,26 +551,22 @@ padding: 10px;
     flex: 1;
     text-align: center;
 }
-
 .info-card img {
     width: 50px;
     height: auto;
     margin-bottom: 15px;
 }
-
 .info-card h2 {
     font-size: 20px;
     color: #333;
     margin-bottom: 10px;
 }
-
 .info-card p {
     font-size: 16px;
     color: #666;
     line-height: 1.5;
     padding-bottom: 20px;
 }
-
 .img-meramente p {
     font-size: 20px;
     font-style: italic;
