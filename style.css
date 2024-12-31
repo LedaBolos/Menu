@@ -473,20 +473,10 @@ section{
         justify-content: center;
         align-items: center;
     }
-    .product .product-row .box {
-        display: flex;
-        flex-direction: column;
-        width: 100%; /* Ajuste para ocupar 100% da largura do swiper */
-        max-width: 50rem; /* Adicione um limite opcional, se necessário */
-        background-color: var(--white);
-        align-items: center;
-        text-align: center;
-        padding: 2rem;
-        gap: 1.5rem;
-        border-radius: 3rem;
-        margin: 0; /* Remova a margem direita para evitar espaços indesejados */
-        box-sizing: border-box; /* Garante que padding seja incluído no cálculo de largura */
-    }    
+
+    .product-content p {
+        min-height: 57.56px;
+    }
 }
 
 .blogs .blogs-row .box .img img{
